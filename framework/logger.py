@@ -10,7 +10,7 @@ class Logger(object):
         self.logger = logging.getLogger(logger)
         self.logger.setLevel(logging.DEBUG)
         rq = time.strftime('%Y-%m-%d_%H.%M')
-        file_path = os.path.dirname(os.getcwd()) + '/Carro_Python/Logs/'
+        file_path = os.path.dirname(os.getcwd()) + '/Carro/Logs/'
         file_name = file_path + rq + '.log'
         fn = logging.FileHandler(file_name)
         fn.setLevel(logging.DEBUG)

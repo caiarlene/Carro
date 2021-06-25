@@ -5,7 +5,7 @@ class ReadConfig:
     config = ''
     def __init__(self):
         self.config = configparser.ConfigParser()
-        file_path = os.path.dirname(os.getcwd()) + '/Carro_Python/config/config.ini'
+        file_path = os.path.dirname(os.getcwd()) + '/Carro/config/config.ini'
 
         self.config.read(file_path)
 

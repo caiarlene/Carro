@@ -37,12 +37,12 @@ class BasePage(object):
         logger.info("Set implicitly wait time as：%d s." % seconds)
 
     def get_window_img(self):
-        file_path = os.path.dirname(os.path.abspath('.')) + '/Carro_Pytho/images/'  # set screenshot saving path
+        file_path = os.path.dirname(os.path.abspath('.')) + '/Carro/images/'  # set screenshot saving path
         timeset = time.strftime('%Y%m%d%H%M%S', time.localtime(time.time()))  # format time
         pic_name = file_path + timeset + '.png'  # define screenshot name
         try:
             self.driver.get_screenshot_as_file(pic_name)
-            logger.info('Take screenshot successfully, saving to path：/Carro_Pytho/images.')
+            logger.info('Take screenshot successfully, saving to path：/Carro/images.')
         except Exception as e:
             logger.error('', format(e))
             self.get_window_img()
