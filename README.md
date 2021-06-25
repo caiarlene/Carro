@@ -23,7 +23,11 @@ echo $PATH
 cp ~/Downloads/chromedriver /usr/local/bin/
 ```
 >### Execution
-To run the test cases, please use this command in Pycharm:
+1. To run the test cases, please use this command in Pycharm:
 ```
 python RunTest.py
+```
+2. After the execution is done, please use the command to view test report
+```
+open testreports/2021{actual_execution_time}\ test\ result.html
 ```
